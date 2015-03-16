@@ -31,6 +31,10 @@ The project is split into three main sections.
 
 endpoints, middleware and services.
 
+#### Consumables
+
+Consumable api docs can be found [here](consume-docs/readme.md)
+
 #### Endpoints
 
 Each endpoint has its own folder to keep structure self contained and modular
