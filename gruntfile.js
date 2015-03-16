@@ -64,7 +64,8 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-mocha-istanbul');
     grunt.loadNpmTasks('grunt-contrib-yuidoc');
-
+    grunt.loadNpmTasks('grunt-bump');
+    
     grunt.registerTask('release', 'Build, bump and publish to NPM.', function (type) {
         return grunt.task.run(['npm-contributors', 'bump:' + (type || 'patch'), 'npm-publish']);
     });
