@@ -55,11 +55,16 @@ module.exports.end = function (res, status, message) {
     }
 
     //If status is bigger than 200 then set error to true
+    //Not using all the error code so this works correctly
+    //204 is used in the app but thats in the middleware
+    //and requiring this service isnt necessary so this works
     if (status > 200) {
         error = true;
     }
 
-    //Format is personal preference, can see if there is an error and what the status code is straight away
+    //Format is personal preference, can see if there is an error and 
+    //what the status code is straight away from browser
+    //(can use f12 too but at a VERY quick glance its obvious and not too much overhead)
     //It also helps JSON.stringify not fail if for example a string is passed as the message
     //Because an object is created and the message that is passed is plugged into the response object as part of this object
     //Saves all the type checking etc...
