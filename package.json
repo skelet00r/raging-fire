@@ -1,0 +1,36 @@
+{
+  "name": "raging-fire",
+  "version": "0.0.0",
+  "description": "Blog server",
+  "main": "api/index.js",
+  "scripts": {
+    "start": "node api/index",
+    "test": "grunt test",
+    "postinstall": "grunt makego && node api/index"
+  },
+  "author": "James Delibas",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "mocha": "~2.2.1",
+    "grunt-mocha-test": "~0.12.7",
+    "should": "~5.2.0",
+    "grunt": "~0.4.5",
+    "grunt-bump": "~0.3.0",
+    "grunt-istanbul": "~0.4.2",
+    "grunt-cli": "~0.1.13",
+    "rewire": "~2.3.1",
+    "errorhandler": "~1.3.4",
+    "istanbul": "~0.3.7",
+    "grunt-mocha-istanbul": "~2.3.1",
+    "grunt-contrib-yuidoc": "~0.7.0",
+    "yuidoc-bootstrap-theme": "~1.0.4"
+  },
+  "dependencies": {
+    "express": "~4.12.2",
+    "mongodb": "~1.4.34",
+    "body-parser": "~1.12.0",
+    "serve-favicon": "~2.2.0",
+    "mongoose": "~3.8.25",
+    "sanitizer": "~0.1.2"
+  }
+}
